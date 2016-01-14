@@ -1,7 +1,7 @@
 pipes-websockets
 ==
 
-Providers Consumer/Producer from the [pipes](https://hackage.haskell.org/package/pipes) channels for the [websockets](https://hackage.haskell.org/package/websockets) library.
+Providers Consumer/Producer from the [pipes](https://hackage.haskell.org/package/pipes) library for the [websockets](https://hackage.haskell.org/package/websockets) library.
 
 Usage
 --
