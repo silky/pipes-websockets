@@ -10,7 +10,7 @@ maintainer:          noonsilk@gmail.com
 copyright:           2016, Noon van der Silk
 category:            Web
 build-type:          Simple
-extra-source-files:  README.md, CHANGELOG.md
+extra-source-files:  README.md, CHANGELOG.md, stack.yaml
 cabal-version:       >=1.10
 description:
   This library provides Producers and Consumers of data
