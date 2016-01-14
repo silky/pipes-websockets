@@ -7,7 +7,6 @@ module Pipes.WebSockets.Examples (
   where
 
 import           Data.Text
-import           Debug.Trace                    (traceM)
 import           Pipes
 import           Pipes.Concurrent
 import qualified Pipes.Prelude                  as P
@@ -44,7 +43,7 @@ echoStdInOut host port path = do
                                    (\s -> yield (pack s) >-> wsOut)
         --
         --  Read messages from the socket (which have been placed on the
-        --  mailbox).
+        --  mailbox) and print to stdout.
         msgsOut  = runEffect $ for (fromInput input) 
                                    (\s -> lift $ putStrLn ("Received: " ++ unpack s))
 
@@ -56,5 +55,4 @@ echoStdInOut host port path = do
                                 )
     where
         lvf = liftIO . void . forkIO
-
 
