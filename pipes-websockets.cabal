@@ -10,6 +10,7 @@ maintainer:          noonsilk@gmail.com
 copyright:           2016, Noon van der Silk
 category:            Web
 build-type:          Simple
+extra-source-files:  README.md, CHANGELOG.md
 cabal-version:       >=1.10
 description:
   This library provides Producers and Consumers of data
@@ -19,6 +20,8 @@ description:
   produced by this package simple runs one of the examples.
   .
   Import "Pipes.WebSockets" to use the library.
+  .
+  See @CHANGELOG.md@ for changes.
 
 library
   ghc-options:         -Wall
